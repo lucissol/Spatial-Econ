@@ -40,7 +40,7 @@ class Region:
             initial_wealths = (np.random.pareto(a, n_agents) + 1) * m
         else:
             # Uniform: Everyone is equal
-            initial_wealths = np.random.uniform(0.5, 5.0, n_agents)
+            initial_wealths = np.ones(n_agents) * (1 / n_agents)
             
         # Normalize initial wealth so it matches the start of the Macro Series
         current_total = np.sum(initial_wealths)

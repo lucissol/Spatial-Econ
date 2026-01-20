@@ -104,7 +104,7 @@ class SpatialMacroModel:
         
         return y_curr
 
-    def simulate_path(self, base_level = 1000,seed=123, sigma_F=0.1, sigma_R=0.05):
+    def simulate_path(self, base_level = 100,seed=123, sigma_F=0.1, sigma_R=0.05):
         """
         Runs a STOCHASTIC simulation with random shocks.
         Returns a DataFrame of Levels (assuming Log-Normal process).
