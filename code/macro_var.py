@@ -42,7 +42,7 @@ class SpatialMacroEconomy:
         
         # Apply Shock at t=1 (t=0 is pre-shock steady state)
         # 0 = Core, 1 = Periphery
-        idx = 0 if shock_region == 'Core' else 1
+        idx = 0 if shock_region == 'core' else 1
         X[idx, 1] = shock_size
         
         # Iterate forward
